@@ -9,4 +9,11 @@ Goals for this first website:
 This will be my first project. Main goals for this:
   -learn html and a bit of css
   -figure out how to properly divide the website
-  -figure out how to take user input in the form of text
+  -figure out how to take user input in the form of 
+  
+  Version 1.1
+  
+  Current Goals:
+  -Create blocks to figure out how structuring works with HTML (Version 1.1)s
+  Completed Goals:
+  -figure out how to use interal CSS (Version 1.0)
