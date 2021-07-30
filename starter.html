@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="UTF-8">
+	<title>First Website</title>
   <!-- Goals for this first website:
   1. Landing page that will say Welcome to Lorum
   2. Second part will have a picture with a little goal part
@@ -25,6 +27,8 @@
     <h1 style="font-family: 'Times New Roman', Times, serif;">
       Hello World!
     </h1>
+  </div>
+  <div>
     <p style="background-color: violet;">
       This is my first website! This was the goals of the website:<br>
       <b>1.</b> Learn html and a bit of css<br>
@@ -34,24 +38,26 @@
   </div>
 
 <!-- part 2-->
-<div class="spart" style="color: crimson;">
-  <div class="leftgif" style="float: left;">
+<div class="wrapper" style="background-color: crimson; display:flex; flex:1;">
+  <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod; flex: 1;">
     <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
   </div>  
-  <div class="middlequote" style="float:left; background-color: cadetblue;">
+  <div class="middlequote" style=" display: inline-block; background-color: cadetblue; flex: 1;">
     <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
       Goals for the company: " "
     </p>
   </div>
-  <div class="rightphoto" style="float: right; margin-right: 25px;">
-    <img src="images/smiling_cat.png" alt="tester photo" width="120%" height="120%" style="background-color: wheat;">
+  <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; flex: 1;">
+    <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset" style="background-color: wheat;">
   </div>
 </div>
+
+<!-- part 3 -->
+<!-- issue (FIXED): div is showing up in the same line as  the second part. Version 1.2-->
+<div class="comments" style="background-color: darkblue;">
+  <input type="text" style="font-size: 12px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
+</div>
 <!--
-<head>
-	<meta charset="UTF-8">
-	<title>Hello World</title>
-</head>
 <p>
 <table>
   <tr>
