@@ -22,6 +22,19 @@
       .spart{
         background-color: brown;
       }
+      .text{
+        min-width: 50%;
+        min-height: 100%;
+        width: fit-content;
+        max-width: 200px;
+        height: min-content;
+        max-height: max-content;
+        resize: none;
+        border: orchid;
+        border-radius: 10px;
+        text-align: right;
+        background-color: orchid;
+      }
     </style>
   <div class="fpart">
     <h1 style="font-family: 'Times New Roman', Times, serif;">
@@ -54,9 +67,21 @@
 
 <!-- part 3 -->
 <!-- issue (FIXED): div is showing up in the same line as  the second part. Version 1.2-->
-<div class="comments" style="background-color: darkblue;">
-  <input type="text" style="font-size: 12px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
+<div class="comments" style="background-color: darkblue; display: flexbox;">
+  <form>
+    <p>
+      Please leave a comment on what you'd like to see next!
+    </p>
+    <textarea
+      class="text"
+      type="text"
+      name="suggestions"
+      style="font-size: 10mm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
+    </textarea>
+      <input type="submit" value="Submit" onclick="">
+  </form>
 </div>
+
 <!--
 <p>
 <table>
