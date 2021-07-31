@@ -36,51 +36,61 @@
         background-color: orchid;
       }
     </style>
-  <div class="fpart">
-    <h1 style="font-family: 'Times New Roman', Times, serif;">
-      Hello World!
-    </h1>
-  </div>
-  <div>
-    <p style="background-color: violet;">
-      This is my first website! This was the goals of the website:<br>
-      <b>1.</b> Learn html and a bit of css<br>
-      <b>2.</b> Learn how to properly divide a website<br>
-      <b>3.</b> Learn how to take user text input<br>
-    </p>
-  </div>
+    <script>
+      localStorage.setItem('fullName', 'Jenny Smith');
+      function fn1()
+      {
+        var str = document.getElementById("txt1").nodeValue;
+        alert("Value inside the text box is: " + str);
+      }
+    </script>
+    <div class="fpart">
+      <h1 style="font-family: 'Times New Roman', Times, serif;">
+          Hello World!
+      </h1>
+    </div>
+    <div>
+      <p style="background-color: violet;">
+        This is my first website! This was the goals of the website:<br>
+        <b>1.</b> Learn html and a bit of css<br>
+        <b>2.</b> Learn how to properly divide a website<br>
+        <b>3.</b> Learn how to take user text input<br>
+      </p>
+    </div>
 
-<!-- part 2-->
-<div class="wrapper" style="background-color: crimson; display:flex; flex:1;">
-  <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod; flex: 1;">
-    <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
-  </div>  
-  <div class="middlequote" style=" display: inline-block; background-color: cadetblue; flex: 1;">
-    <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
-      Goals for the company: " "
-    </p>
-  </div>
-  <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; flex: 1;">
-    <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset" style="background-color: wheat;">
-  </div>
-</div>
+    <!-- part 2-->
+    <div class="wrapper" style="background-color: crimson; display:flex; flex:1;">
+      <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod; flex: 1;">
+        <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
+      </div>  
+      <div class="middlequote" style=" display: inline-block; background-color: cadetblue; flex: 1;">
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
+          Goals for the company: " "
+        </p>
+      </div>
+      <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; flex: 1;">
+        <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset" style="background-color: wheat;">
+      </div>
+    </div>
 
-<!-- part 3 -->
-<!-- issue (FIXED): div is showing up in the same line as  the second part. Version 1.2-->
-<div class="comments" style="background-color: darkblue; display: flexbox;">
-  <form>
-    <p>
-      Please leave a comment on what you'd like to see next!
-    </p>
-    <textarea
-      class="text"
-      type="text"
-      name="suggestions"
-      style="font-size: 10mm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
-    </textarea>
-      <input type="submit" value="Submit" onclick="">
-  </form>
-</div>
+    <!-- part 3 -->
+    <!-- issue (FIXED): div is showing up in the same line as  the second part. Version 1.2-->
+    <div class="comments" style="background-color: darkblue; display: flexbox;">
+      <form>
+        <p>
+          Please leave a comment on what you'd like to see next!
+        </p>
+        <input
+          class="text"
+          id="txt1"
+          type="text"
+          name="suggestions"
+          placeholder="Type here!"
+          style="font-size: 10mm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
+      </input>
+          <input type="submit" value="Submit" id="btn1" onclick="fn1()">
+      </form>
+    </div>
 
 <!--
 <p>
