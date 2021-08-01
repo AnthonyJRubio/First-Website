@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <meta charset="UTF-8">
-	<title>First Website</title>
   <!-- Goals for this first website:
   1. Landing page that will say Welcome to Lorum
   2. Second part will have a picture with a little goal part
@@ -12,9 +8,16 @@
   -learn html and a bit of css
   -figure out how to properly divide the website
   -figure out how to take user input in the form of text -->
- 
-  <!-- part 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+	<title>
+    First Website
+  </title>
+
   <body style="background-color: black;">
+
     <style>
       .fpart{
         background-color:blue;
@@ -36,14 +39,17 @@
         background-color: orchid;
       }
     </style>
+
     <script>
       localStorage.setItem('fullName', 'Jenny Smith');
       function fn1()
       {
-        var str = document.getElementById("txt1").nodeValue;
+        var str = document.getElementById("txt1").value;
         alert("Value inside the text box is: " + str);
       }
     </script>
+
+    <!-- part 1 -->
     <div class="fpart">
       <h1 style="font-family: 'Times New Roman', Times, serif;">
           Hello World!
@@ -92,24 +98,14 @@
       </form>
     </div>
 
-<!--
-<p>
-<table>
-  <tr>
-    <td>15</td>
-  </tr>
-</table>
-</p>
-<p>
-<input>
-</input>
-</p>
-<p>
-  <textarea>Suggestions wanted!</textarea>
-</p>
-<nav>
-  <a href="https://github.com/AnthonyJRubio/First-Website">My Github</a>
-</nav>
--->
-</body>
+    <!--  part 4  -->
+    <div id="personal info" style="font-family: 'Times New Roman', Times, serif; font-size: initial; background-color: khaki;">
+      <address style="font-family: inherit; font-size: inherit; background-color: lavenderblush;">
+        This website was made by <a href="mailto:anthonyrubio619@gmail.com">Anthony Rubio</a>.<br>
+        My <a href="https://github.com/AnthonyJRubio/First-Website">Github</a>.<br>
+      </address>
+      Thank you for looking at my website!
+    </div>
+    
+  </body>
 </html>
