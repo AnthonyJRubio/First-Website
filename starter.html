@@ -16,15 +16,9 @@
     First Website
   </title>
 
-  <body style="background-color: black;">
+  <body style="background-color:khaki">
 
     <style>
-      .fpart{
-        background-color:blue;
-      }
-      .spart{
-        background-color: brown;
-      }
       .text{
         min-width: 50%;
         min-height: 100%;
@@ -50,13 +44,13 @@
     </script>
 
     <!-- part 1 -->
-    <div class="fpart">
+    <div>
       <h1 style="font-family: 'Times New Roman', Times, serif;">
           Hello World!
       </h1>
     </div>
     <div>
-      <p style="background-color: violet;">
+      <p>
         This is my first website! This was the goals of the website:<br>
         <b>1.</b> Learn html and a bit of css<br>
         <b>2.</b> Learn how to properly divide a website<br>
@@ -65,16 +59,17 @@
     </div>
 
     <!-- part 2-->
+    <!-- ISSUE: #1 positioning is really weird right now. Might need css to properly position blocks-->
     <div class="wrapper" style="background-color: crimson; display:flex; flex:1;">
-      <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod; flex: 1;">
+      <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod;">
         <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
       </div>  
-      <div class="middlequote" style=" display: inline-block; background-color: cadetblue; flex: 1;">
+      <div class="middlequote" style=" display: inline-block; background-color: cadetblue; position: absolute; left: 25%; right: 25%; top: inherit; bottom: inherit;">
         <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
           Goals for the company: " "
         </p>
       </div>
-      <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; flex: 1;">
+      <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; position: absolute; right: 0;">
         <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset" style="background-color: wheat;">
       </div>
     </div>
@@ -106,6 +101,6 @@
       </address>
       Thank you for looking at my website!
     </div>
-    
+
   </body>
 </html>
