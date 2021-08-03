@@ -1,0 +1,47 @@
+<!--
+    This will be the sign in for future projects. Will not be a part of this one, just wanted to work with this.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>
+        Sign in page
+    </title>
+
+    <body style="background-color: khaki;">
+        <style>
+        </style>
+
+        <script>
+            function fn1()
+            {
+                var username1 = "test1";
+                var passcode1 = "passcode";
+                var username = document.getElementById("username").value;
+                var passcode = document.getElementById("passcode").value;
+                if( username1 == username && passcode1 == passcode)
+                {
+                    alert("sign in completed");
+                }
+                else{
+                    alert("try again!");
+                }
+
+
+            }
+        </script>
+
+        <!-- Pt 1 -->
+
+        <div id="signin">
+            <input type="text" id="username" placeholder="username">
+        </div>
+        <div>
+            <input type="password" id="passcode" placeholder="password">
+        </div>
+        <div>
+            <input type="button" value="Sign in" onclick="fn1()">
+        </div>
+    </body>
+</html>
