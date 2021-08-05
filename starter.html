@@ -16,20 +16,25 @@
     First Website
   </title>
 
-  <body style="background-color:khaki">
+  <body style="background-color:rgb(224, 224, 224)">
 
     <style>
       .text{
-        min-width: 50%;
-        min-height: 100%;
-        width: fit-content;
-        max-width: 200px;
-        height: min-content;
-        max-height: max-content;
+        padding: 10px;
+        padding-right: 50%;
         resize: none;
         border: orchid;
         border-radius: 10px;
-        background-color: orchid;
+      }
+      .btn1{
+        text-align: center;
+      }
+      .btn2{
+        position: absolute;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
       }
     </style>
 
@@ -40,42 +45,48 @@
         var str = document.getElementById("txt1").value;
         alert("Value inside the text box is: " + str);
       }
+      function fn2()
+      {
+        alert("hey, come back to the button!");
+      }
     </script>
 
     <!-- part 1 -->
-    <div>
-      <h1 style="font-family: 'Times New Roman', Times, serif;">
-          Hello World!
-      </h1>
-    </div>
-    <div>
-      <p>
-        This is my first website! This was the goals of the website:<br>
-        <b>1.</b> Learn html and a bit of css<br>
-        <b>2.</b> Learn how to properly divide a website<br>
-        <b>3.</b> Learn how to take user text input<br>
-      </p>
+    <div style="height: 100vh;">
+      <div>
+        <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center;">
+            Hello World!
+        </h1>
+      </div>
+      <div>
+        <p style="text-align: center;">
+          This is my first website! This was the goals of the website:<br>
+          <b>1.</b> Learn html and a bit of css<br>
+          <b>2.</b> Learn how to properly divide a website<br>
+          <b>3.</b> Learn how to take user text input<br>
+        </p>
+      </div>
     </div>
 
     <!-- part 2-->
     <!-- ISSUE: #1 positioning is really weird right now. Might need css to properly position blocks-->
-    <div class="wrapper" style="background-color: crimson; display:flex; flex:1;">
-      <div class="leftgif" style=" display: inline-block; background-color: darkgoldenrod;">
+    <div class="wrapper" style=" display:flex; flex:1; margin-top: 3em; margin-bottom: 3em;">
+      <div class="leftgif" style=" display: inline-block;">
         <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
       </div>  
-      <div class="middlequote" style=" display: inline-block; background-color: cadetblue; position: absolute; left: 25%; right: 25%; top: inherit; bottom: inherit;">
+      <div class="middlequote" style=" display: inline-block; position: absolute; left: 25%; right: 25%; top: inherit; bottom: inherit;">
         <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
           Goals for the company: " "
         </p>
       </div>
-      <div class="rightphoto" style="display: inline-block; margin-right: 25px; background-color: blueviolet; position: absolute; right: 0;">
-        <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset" style="background-color: wheat;">
+      <div class="rightphoto" style="display: inline-block; margin-right: 25px; position: absolute; right: 0;">
+        <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset">
       </div>
     </div>
 
     <!-- part 3 -->
     <!-- issue (FIXED): div is showing up in the same line as  the second part. Version 1.2-->
-    <div class="comments" style="background-color: darkblue; display: flexbox;">
+    <div class="comments" style="display: flexbox; margin-top: 3em; margin-bottom: 3em;">
       <form>
         <p>
           Please leave a comment on what you'd like to see next!
@@ -86,19 +97,19 @@
           type="text"
           name="suggestions"
           placeholder="Type here!"
-          style="font-size: 10mm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: darkblue;">
+          style="font-size: 10mm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: rgb(199, 199, 199);">
       </input>
-          <input type="button" value="Submit" id="btn1" onclick="fn1()">
+          <input type="button" class="btn2" value="Submit" id="btn1" onclick="fn1()">
       </form>
     </div>
 
     <!--  part 4  -->
-    <div id="personal info" style="font-family: 'Times New Roman', Times, serif; font-size: initial; background-color: khaki;">
+    <div id="personal info" style="font-family: 'Times New Roman', Times, serif; font-size: initial; background-color: khaki; margin-top: 5em; margin-bottom: 1em;">
       <address style="font-family: inherit; font-size: inherit; background-color: lavenderblush;">
         This website was made by <a href="mailto:anthonyrubio619@gmail.com">Anthony Rubio</a>.<br>
         My <a href="https://github.com/AnthonyJRubio/First-Website">Github</a>.<br>
       </address>
-      Thank you for looking at my website!
+      <input type="button" id="btn2" onmouseleave="fn2()" value="tester">
     </div>
 
   </body>
