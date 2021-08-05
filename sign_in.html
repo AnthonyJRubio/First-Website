@@ -20,9 +20,11 @@
                 var passcode1 = "passcode";
                 var username = document.getElementById("username").value;
                 var passcode = document.getElementById("passcode").value;
+
                 if( username1 == username && passcode1 == passcode)
                 {
                     alert("sign in completed");
+                    location.assign("./starter.html");
                 }
                 else{
                     alert("try again!");
@@ -33,14 +35,17 @@
         </script>
 
         <!-- Pt 1 -->
-        <div id="signin">
-            <input type="text" id="username" placeholder="username" required>
-        </div>
-        <div>
-            <input type="password" id="passcode" placeholder="password" required>
-        </div>
-        <div>
-            <input type="button" value="Sign in" onclick="fn1()">
+        <!-- ISSUE: not aligning in the center of the window. keeps reverting to top of window. Will need to fix.-->
+        <div id="container" style="display: flexbox; justify-content: center; align-items: center; margin: auto; width: 400px;">
+            <div id="signin" style="margin: auto; background-color: lawngreen; width: inherit; display: inherit; justify-content: center;">
+                <input type="text" id="username" placeholder="username" required>
+            </div>
+            <div style="background-color: lightcoral; width: inherit; margin: auto; display: inherit; justify-content: center;">
+                <input type="password" id="passcode" placeholder="password" required>
+            </div>
+            <div style="background-color: lightseagreen; width: inherit; display: inherit; justify-content: center; margin: auto;">
+                <input type="button" value="Sign in" onclick="fn1()">
+            </div>
         </div>
     </body>
 </html>
