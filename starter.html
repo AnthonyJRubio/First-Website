@@ -55,6 +55,27 @@
         border-radius: 2rem;
       }
 
+      #second_part {
+        background-color: rgb(255, 225, 235);
+        padding: 10rem;
+        border-radius: 2rem;
+        display:flex; 
+        flex:1; 
+        margin-top: 3em; 
+        margin-bottom: 3em;
+      }
+
+      #left_gif {
+        display: inline-block;
+      }
+
+      #middle_quote {
+        display: inline-block; position: absolute; left: 25%; right: 25%; top: inherit; bottom: inherit;
+      }
+
+      #right_photo {
+        display: inline-block; margin-right: 25px; position: absolute; right: 0;
+      }
     </style>
 
     <script>
@@ -94,16 +115,16 @@
 
       <!-- part 2-->
       <!-- ISSUE: #1 positioning is really weird right now. Might need css to properly position blocks-->
-      <div class="wrapper" style=" display:flex; flex:1; margin-top: 3em; margin-bottom: 3em;">
-        <div class="leftgif" style=" display: inline-block;">
+      <div id="second_part">
+        <div id="left_gif">
           <img src="images/dancing_bear.gif" alt="dancing golden bear" width="100px" height="100px">
         </div>  
-        <div class="middlequote" style=" display: inline-block; position: absolute; left: 25%; right: 25%; top: inherit; bottom: inherit;">
+        <div id="middle_quote">
           <p style="font-family: 'Times New Roman', Times, serif; font-size: 120%; text-align: center;">
             Goals for the company: " "
           </p>
         </div>
-        <div class="rightphoto" style="display: inline-block; margin-right: 25px; position: absolute; right: 0;">
+        <div id="right_photo">
           <img src="images/smiling_cat.png" alt="tester photo" width="unset" height="unset">
         </div>
       </div>
